@@ -19,12 +19,9 @@ const helloWorld = function() {
 
 // Exercise #6 Implement the refactor!
 function sayHello(input) {
-    if (input === undefined) {
-        return "Hello, World!";
-    } else if (input === true) {
-        return "Hello, World!";
-    } else {
+    if (typeof input === "string" && !(input == Number(input))) {
         return "Hello, " + input + "!";
+    } else {
+        return "Hello, World!";
     }
-
 }

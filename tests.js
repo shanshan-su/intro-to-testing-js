@@ -46,5 +46,29 @@ describe("sayHello", function() {
     it("should return \"Hello, World!\" when passed true", function() {
         expect(sayHello(true)).toBe("Hello, World!");
     });
+    it("should return \"Hello, World!\" when passed false", function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed null", function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed NaN", function() {
+        expect(sayHello(NaN)).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed ''", function() {
+        expect(sayHello('')).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed 2.3", function() {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed '5'", function() {
+        expect(sayHello('5')).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed [1, 2, 3]", function() {
+        expect(sayHello([1, 2, 3])).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed isNaN()", function() {
+        expect(sayHello(isNaN())).toBe("Hello, World!");
+    });
 });
 
