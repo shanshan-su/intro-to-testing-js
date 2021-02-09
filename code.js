@@ -8,5 +8,5 @@ const helloWorld = function() {
 }
 
 function sayHello() {
-    return "Hello, there!";
+    return "Hello, Jane!";
 }

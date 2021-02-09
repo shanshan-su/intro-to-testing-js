@@ -23,12 +23,14 @@ describe("sayHello", function() {
     it("should return a string when called", function() {
         expect(typeof sayHello()).toBe("string");
     });
-    it("should return the string \"Hello, there!\" when executed", function() {
-        expect(sayHello()).toBe("Hello, there!");
+    // Exercise #3 - Add a test to confirm actual vs. expected output.
+    it("should return \"Hello, Jane!\" when passed \"Jane\"", function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
-    it("should never return \"undefined\" when called", function() {
-        expect(sayHello()).not.toBe(undefined);
-    });
+
+
+
+
 
 });
 
