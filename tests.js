@@ -39,6 +39,12 @@ describe("sayHello", function() {
     it("should return \"Hello, Pat!\"", function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-
+    // Exercise #8 "Repeat" step (where we look for additional tests to add)
+    it("should return \"Hello, World!\" when passed undefined", function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it("should return \"Hello, World!\" when passed true", function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
 });
 
