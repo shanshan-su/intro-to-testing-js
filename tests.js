@@ -35,7 +35,10 @@ describe("sayHello", function() {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
 
-
+    // Exercise #5 One more test before refactoring...
+    it("should return \"Hello, Pat!\"", function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 
 });
 
