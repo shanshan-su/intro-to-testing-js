@@ -19,4 +19,16 @@ describe("sayHello", function() {
     it("should be a defined function", function() {
         expect(typeof sayHello).toBe("function");
     });
+    // Exercise #2 Ensure our function returns the right data type.
+    it("should return a string when called", function() {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it("should return the string \"Hello, there!\" when executed", function() {
+        expect(sayHello()).toBe("Hello, there!");
+    });
+    it("should never return \"undefined\" when called", function() {
+        expect(sayHello()).not.toBe(undefined);
+    });
+
+});
 
