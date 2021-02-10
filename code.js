@@ -31,7 +31,7 @@ function isFive(input) {
 }
 
 function isEven(input) {
-    return input % 2 === 0 && input !== false;
+    return input % 2 === 0 && input !== false && input !== null;
 }
 
 function isVowel(input) {
