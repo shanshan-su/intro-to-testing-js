@@ -35,8 +35,10 @@ function isEven(input) {
 }
 
 function isVowel(input) {
-
-    return false;
-
+    if (input === "a") {
+        return true;
+    } else {
+        return false;
+    }
 
 }
