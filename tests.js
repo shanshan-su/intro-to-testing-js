@@ -133,4 +133,7 @@ describe("isVowel", function() {
     it("should return true when passed \"a\"", function() {
         expect(isVowel("a")).toBe(true);
     });
+    it("should return true when passed \"A\"", function() {
+        expect(isVowel("A")).toBe(true);
+    });
 });

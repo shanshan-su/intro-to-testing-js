@@ -37,8 +37,9 @@ function isEven(input) {
 function isVowel(input) {
     if (input === "a") {
         return true;
+    } else if(input === "A") {
+        return true;
     } else {
         return false;
     }
-
 }
