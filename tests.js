@@ -67,8 +67,14 @@ describe("sayHello", function() {
     it("should return \"Hello, World!\" when passed [1, 2, 3]", function() {
         expect(sayHello([1, 2, 3])).toBe("Hello, World!");
     });
-    it("should return \"Hello, World!\" when passed isNaN()", function() {
-        expect(sayHello(isNaN())).toBe("Hello, World!");
+    it("should return \"Hello, World!\" when passed helloWorld", function() {
+        expect(sayHello(helloWorld)).toBe("Hello, World!");
     });
 });
 
+// Exercise #10 Let's Test-Drive an isFive function!
+describe("isFive", function() {
+    it("should be a defined function", function() {
+        expect(typeof isFive).toBe("function");
+    });
+});
