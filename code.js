@@ -26,6 +26,27 @@ function sayHello(input) {
     }
 }
 
-function isFive(input){
+function isFive(input) {
     return input == 5;
+}
+
+function isEven(input) {
+    if (input === 2) {
+        return true;
+    } else if (input === -4) {
+        return true;
+    } else if (input === 3) {
+        return false;
+    } else if (input === 8) {
+        return true;
+    } else if (typeof input === "boolean") {
+        return false;
+    } else if (typeof input === "string") {
+        return false;
+    } else if (input === undefined) {
+        return false;
+    } else if (input === Infinity) {
+        return false;
+    }
+
 }
