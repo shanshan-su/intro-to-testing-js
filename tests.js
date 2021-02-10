@@ -120,8 +120,14 @@ describe("isEven", function() {
     it("should return false when passed false", function() {
         expect(isEven(false)).toBe(false);
     });
+    it("should return false when passed null", function() {
+        expect(isEven(null)).toBe(false);
+    });
     it("should return false when passed undefined", function() {
         expect(isEven(undefined)).toBe(false);
+    });
+    it("should return false when called without an argument", function() {
+        expect(isEven()).toBe(false);
     });
 });
 
@@ -154,7 +160,15 @@ describe("isVowel", function() {
     it("should return false when passed \"banana\"", function() {
         expect(isVowel("banana")).toBe(false);
     });
+    it("should return false when passed null", function() {
+        expect(isVowel(null)).toBe(false);
+    });
     it("should return false when passed undefined", function() {
         expect(isVowel(undefined)).toBe(false);
     });
+    it("should return false when called without an argument", function() {
+        expect(isVowel()).toBe(false);
+    });
 });
+
+// Exercise #13 Test Drive an add function
