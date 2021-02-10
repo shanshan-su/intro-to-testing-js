@@ -114,8 +114,11 @@ describe("isEven", function() {
     it("should return false when passed Infinity", function() {
         expect(isEven(Infinity)).toBe(false);
     });
-    it("should return false when passed a boolean", function() {
-        expect(isEven(true), isEven(false)).toBe(false);
+    it("should return false when passed true", function() {
+        expect(isEven(true)).toBe(false);
+    });
+    it("should return false when passed false", function() {
+        expect(isEven(false)).toBe(false);
     });
     it("should return false when passed undefined", function() {
         expect(isEven(undefined)).toBe(false);
@@ -135,5 +138,14 @@ describe("isVowel", function() {
     });
     it("should return true when passed \"A\"", function() {
         expect(isVowel("A")).toBe(true);
+    });
+    it("should return true when passed \"y\"", function() {
+        expect(isVowel("y")).toBe(true);
+    });
+    it("should return false when passed 4", function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it("should return false when passed a boolean value", function() {
+        expect(isVowel(4)).toBe(false);
     });
 });
