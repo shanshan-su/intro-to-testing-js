@@ -121,3 +121,10 @@ describe("isEven", function() {
         expect(isEven(undefined)).toBe(false);
     });
 });
+
+// Exercise #12 Test Drive an isVowel function
+describe("isVowel", function() {
+    it("should be a defined function", function() {
+        expect(typeof(isVowel)).toBe("function");
+    });
+});
