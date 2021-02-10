@@ -35,13 +35,7 @@ function isEven(input) {
 }
 
 function isVowel(input) {
-    if (input === "a") {
-        return true;
-    } else if(input === "A") {
-        return true;
-    } else if(input === "y") {
-        return true;
-    }
-    return false;
+    var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    return vowels.includes(input);
 
 }
