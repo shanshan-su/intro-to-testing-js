@@ -40,22 +40,5 @@ function isVowel(input) {
 }
 
 function add(inputOne, inputTwo) {
-    if (inputOne === 2 && inputTwo === 3) {
-        return 5;
-    } else if (inputOne === -3, inputTwo === -9) {
-        return -12;
-    } else if (inputOne === "5", inputTwo === 6) {
-        return 11;
-    } else if (inputOne === "-4", inputTwo === "10") {
-        return 6;
-    } else if (inputOne === "banana", inputTwo === "split") {
-        return NaN;
-    } else if (inputOne === 2, inputTwo === "apples") {
-        return NaN;
-    } else if (inputOne === undefined, inputTwo === undefined) {
-        return NaN;
-    } else {
-        return 8;
-    }
-
+    return Number(inputOne) + Number(inputTwo);
 }
