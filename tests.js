@@ -192,12 +192,12 @@ describe("add", function() {
         expect(add("-4", "10")).toBe(6);
     });
     it("should return NaN when passed \"banana\" and \"split\"", function() {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(isNaN(add("banana", "split"))).toBe(true); // toBe is basically ===, when the result is NaN, the test code will do NaN === NaN >>> false >>> test fail with the old code
     });
     it("should return NaN when passed 2 and \"apples\"", function() {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(isNaN(add(2, "apples"))).toBe(true);
     });
     it("should return NaN when called without arguments", function() {
-        expect(add()).toBe(NaN);
+        expect(isNaN(add())).toBe(true);
     });
 });
